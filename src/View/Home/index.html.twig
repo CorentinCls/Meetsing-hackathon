@@ -2,9 +2,11 @@
 
 {% block content %}
     <p class="HomepageTitle glass">MeetSing</p>
-    
-
-
-
-{% endblock %}
-    
+    <form method="post" value="login">
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email">
+    <label for="password">Mot de passe</label>
+    <input type="password" id="password" name="password">
+    <button type="submit">Se connecter</button>
+    </form>
+ {% endblock %}
