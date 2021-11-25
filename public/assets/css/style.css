@@ -1,0 +1,38 @@
+:root {
+    background-image: linear-gradient(to bottom ,#b1bfd3,#a8655b);
+    --color1 : #AF4596;
+    --color2 : #F0AEC0;
+    --color3 : #EEBCCC;
+    --font-color : #392B57;
+}
+
+body {
+    height: 100vh;
+}
+
+.glass {
+    border: solid 0.2rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(4.3px);
+    -webkit-backdrop-filter: blur(4.3px);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    background: linear-gradient(145deg);
+    box-shadow:  13px 13px 14px --color2,
+    -13px -13px 14px #ff9acb;
+}
+
+
+/* START Homepage */
+
+.HomepageTitle {
+    text-align: center;
+    height: 90vh;
+    font-size: 5vh;
+    color: var(--font-color);
+}
+
+
+
+/* END Homepage */
