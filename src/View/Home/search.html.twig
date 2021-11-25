@@ -1,18 +1,19 @@
 {% extends 'layout.html.twig' %}
 
 {% block content %}
+<div class="all-card-container">
 {% for user in users %}
-
+    <div class="card">
         <div class="glass">
-            <div class="border"></div>
-             <p> {{user.instrument_name}} </p>
-   <p> {{user.name}} </p>
-   <p> {{user.prices}} </p>
-   <p> {{user.address}} </p>
-            <div class="border"></div>
-            <p class="price">{{ user.prices }}</p>
+             <div class="card-img-container">
+             <img style="width: 280px" src="{{user.photo}}">
+             </div>
+             <p> {{user.name}}       {{user.prices}} <span style="font-weight: bold">€/h</span></p>
+             <p> {{user.address}} </p>
         </div>
+    </div>
 {% endfor %}
+</div>
     
   
  {% endblock %}

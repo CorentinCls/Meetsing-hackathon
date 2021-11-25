@@ -26,7 +26,7 @@ class UserManager extends AbstractManager
     
     public function selectAllSearchParameters(): array
     {
-        $query = 'SELECT address, instrument_name FROM user cross join instrument' ;
+        $query = 'SELECT adress, instrument FROM populate' ;
 
 
         return $this->pdo->query($query)->fetchAll();
