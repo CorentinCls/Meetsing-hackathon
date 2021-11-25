@@ -2,38 +2,22 @@
 
 {% block content %}
 
-   <div id="wrap">
-  <header class="header">
-    <nav class="nav">
-      <a href="#wrap" id="open">
-        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="34px" height="27px" 
-        viewBox="0 0 34 27" enable-background="new 0 0 34 27" xml:space="preserve">
-            <rect fill="#FFFFFF" width="34" height="4"/>
-            <rect y="11" fill="#FFFFFF" width="34" height="4"/>
-            <rect y="23" fill="#FFFFFF" width="34" height="4"/>
-        </svg>
-      </a>
-      <a href="#" id="close">x</a>
-      {# <h1><a href="#">Connecte-toi</a></h1> #}
-    <form class="formContainer" method="post" value="login">
-    <label class="loginEmail" for="email">Email</label>
-    <input class="glass" type="email" id="email" name="email">
-    <label for="password">Password</label>
-    <input class="glass" type="password" id="password" name="password">
-    <button class="buttonSubmit glass" type="submit">➔</button>
-    </form> 
-    </nav>
-  </header>
+<div class="card">
+  <div class="brand-logo"></div>
+  <div class="brand-title">MeetSing</div>
+  <div class="inputs">
+    <label>Instrument</label>
+    <select name="instrument" placeholder="example@test.com" />
+    {% for instrument in users %}
+        <option name={{instrument.instrument_name}} value={{instrument.instrument_name}}>{{instrument.instrument_name}}</option>
+    {% endfor %}
+    </select>
+    <label></label>
+      <select name="instrument" placeholder="example@test.com" />
+    {% for user in users %}
+        <option name={{user.address}} value={{user.address}}>{{user.address}}</option>
+    {% endfor %}
+    <button type="submit">Chercher</button>
+  </div>
 </div>
-    
-    <p class="HomepageTitle">MeetSing</p>
-
-<div class="search-form">
-    <form method="POST">
-    <input type="text" placeholder="Instruments.." name="instrument">
-    <input type="text" placeholder="Ville.." name="address">
-    <button type="submit">Rechercher</button>
-    </form>
-</div>
-
  {% endblock %}
