@@ -221,8 +221,14 @@ p { color: #333333; font-family: "Helvetica Neue",Arial,sans-serif;
   z-index: 1;
   position: absolute;
 }
-#header-container select {
-  
+label:first-child {
+  padding: 2.5rem;
+}
+label {
+    padding: 1.5rem;
+  }
+select:nth-child(2) {
+    padding-bottom: 1rem;
 }
 .logo {
   z-index: 1;
@@ -230,9 +236,20 @@ p { color: #333333; font-family: "Helvetica Neue",Arial,sans-serif;
 
 }
 #header-container {
-	display: block;
+	display: flex;
+    flex-direction: column;
+
 	width: 320px;
   height: 55px;
+}
+
+#search {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top : 2rem;
+    border-radius: 15px;
+    padding: 0.6rem;
 }
 
 /* option { 

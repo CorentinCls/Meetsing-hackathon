@@ -7,32 +7,27 @@
 <div class="card glass home">
   <div class="brand-logo">
   </div>
-
-    {# Intro #}
         <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-
-    {# Form #}
   <div class="inputs glass">
-    <label>Instrument</label>
     <form method="post">
     <section id="header-container">
-    <select name="instrument" placeholder="example@test.com" />
+    <label for="instrument">Instrument</label>
+    <select id="instrument"="instrument" placeholder="example@test.com" />
     {% for user in users %}
         <option name={{user.instrument}} value={{user.user}}>{{user.instrument}}</option>
     {% endfor %}
     </select>
     <br>
-    <label>Address</label>
-    </section>
-        <section id="header-container">
-    <select name="address" placeholder="6 rue de saint brice" />
+    <label for="address" >Address</label>
+    <select id="address" name="address" placeholder="6 rue de saint brice" />
     {% for user in users %}
         <option name={{user.address}} value={{user.address}}>{{user.adress}}</option>
     {% endfor %}
     </select>
     <br>
+    <div class="element"></div>
+    <button id="search" type="submit">Chercher</button>
     </section>
-    <button type="submit">Chercher</button>
   </div>
 </div>
 
