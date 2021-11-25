@@ -1,6 +1,7 @@
 {% extends 'layout.html.twig' %}
 
 {% block content %}
+
    <div id="wrap">
   <header class="header">
     <nav class="nav">
@@ -26,4 +27,13 @@
 </div>
     
     <p class="HomepageTitle">MeetSing</p>
+
+<div class="search-form">
+    <form method="POST">
+    <input type="text" placeholder="Instruments.." name="instrument">
+    <input type="text" placeholder="Ville.." name="address">
+    <button type="submit">Rechercher</button>
+    </form>
+</div>
+
  {% endblock %}

@@ -6,7 +6,7 @@ use App\Model\LoginManager;
 
 class LoginController extends AbstractController
 {
-    public function index()
+    public static function index()
     {
         session_start();  // démarrage d'une session
         if ($_SERVER['REQUEST_METHOD'] == 'POST') {
