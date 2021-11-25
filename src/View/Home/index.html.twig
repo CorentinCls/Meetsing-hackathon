@@ -1,11 +1,18 @@
 {% extends 'layout.html.twig' %}
 
 {% block content %}
+<div class="logo-container">
+  <img class="logo" style="width: 100px" src="assets/images/logo.png">
+</div>
+<div class="card glass home">
+  <div class="brand-logo">
+  </div>
 
-<div class="card">
-  <div class="brand-logo"></div>
-  <div class="brand-title">MeetSing</div>
-  <div class="inputs">
+    {# Intro #}
+        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eleifend sodales laoreet. Aenean a ante sagittis, tincidunt turpis interdum, aliquet risus. Nulla facilisi. Phasellus ac erat est. Fusce at rhoncus tellus. Fusce porta eros risus, vel aliquet arcu luctus et. Sed in nibh in dolor bibendum maximus at ultricies ex. </p>
+
+    {# Form #}
+  <div class="inputs glass">
     <label>Instrument</label>
     <form method="post">
     <section id="header-container">
@@ -14,6 +21,9 @@
         <option name={{user.instrument}} value={{user.user}}>{{user.instrument}}</option>
     {% endfor %}
     </select>
+    <br>
+    <label></label>
+      <select name="address" placeholder="example@test.com" />
     </section>
     </div>
         <section id="header-container">
@@ -22,6 +32,7 @@
         <option name={{user.address}} value={{user.address}}>{{user.adress}}</option>
     {% endfor %}
     </select>
+    <br>
     </section>
     <button type="submit">Chercher</button>
   </div>
