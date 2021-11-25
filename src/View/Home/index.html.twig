@@ -1,5 +1,10 @@
 {% extends 'layout.html.twig' %}
 
 {% block content %}
-    <h1>Hello Wilder !</h1>
+    <form method="post">
+    <input type="text" name="email">
+    <input type="password" name="password">
+    <button type="submit">Se connecter</button>
+    </form>
+    <p>{{login.email}}</p>
 {% endblock %}
