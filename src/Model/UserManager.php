@@ -22,4 +22,14 @@ class UserManager extends AbstractManager
 
         return $statement->fetchAll();
     }
+
+    
+    public function selectAllSearchParameters(): array
+    {
+        $query = 'SELECT address, instrument_name FROM user cross join instrument' ;
+
+
+        return $this->pdo->query($query)->fetchAll();
+    }
+
 }
