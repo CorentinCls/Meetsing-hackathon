@@ -6,7 +6,7 @@ use App\Model\LoginManager;
 
 class LoginController extends AbstractController
 {
-    public static function index()
+    public function index()
     {
         session_start();  // démarrage d'une session
         if ($_SERVER['REQUEST_METHOD'] == 'POST') {
@@ -19,6 +19,6 @@ class LoginController extends AbstractController
                 Header('Location: /');
             }
         }
-        return $this->twig->render('Home/index.html.twig');
+        return $this->twig->render('Home/login.html.twig');
     }
 }
