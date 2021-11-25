@@ -23,7 +23,7 @@ class UserManager extends AbstractManager
         return $statement->fetchAll();
     }
 
-    
+
     public function selectAllSearchParameters(): array
     {
         $query = 'SELECT adress, instrument FROM populate' ;
@@ -31,5 +31,4 @@ class UserManager extends AbstractManager
 
         return $this->pdo->query($query)->fetchAll();
     }
-
 }

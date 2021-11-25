@@ -183,26 +183,32 @@ p { color: #333333; font-family: "Helvetica Neue",Arial,sans-serif;
     align-items: center;
     z-index: 0;
     position: relative;
-
-}
-
-.home select {
-    width: 50%;
+    
+  }
+  
+  .home select {
+    width: 80%;
     text-align: center;
     margin-bottom: 1rem;
     border-radius: 5px;
-}
+    margin: 0 auto;
+    color: #131010;
+    padding: 10px;
+    background: url(http://sharpik.com/wip/cuteselect/arrow.png) 295px 12px no-repeat white;
+    border-radius: 155px;
+  }
 
 .home .inputs{
     height: 60%;
     width: 90%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;    
     background: linear-gradient(145deg, #fffffd, #d6d6d4);
     background: rgba(255, 255, 255, 0.418);
-    box-shadow:  40px 23px 30px #000000,
-}
+
+  }
+
+
 
 .brand-title {
   text-align: center;
@@ -215,29 +221,39 @@ p { color: #333333; font-family: "Helvetica Neue",Arial,sans-serif;
   z-index: 1;
   position: absolute;
 }
-
+label:first-child {
+  padding: 2.5rem;
+}
+label {
+    padding: 1.5rem;
+  }
+select:nth-child(2) {
+    padding-bottom: 1rem;
+}
 .logo {
   z-index: 1;
   /* position: relative; */
 
 }
 #header-container {
-	display: block;
+	display: flex;
+    flex-direction: column;
+
 	width: 320px;
   height: 55px;
 }
 
-/* Select style here */
-option {
-    text-align: center;
-}
-select {
-	margin: 0 auto;
-	color: #131010;
-	width: 310px;
-	padding: 10px;
-	background: url(http://sharpik.com/wip/cuteselect/arrow.png) 295px 12px no-repeat white;
+#search {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top : 2rem;
     border-radius: 15px;
+    padding: 0.6rem;
+}
+
+/* option { 
+    text-align: center;
 }
 
 select option {
@@ -246,4 +262,4 @@ select option {
 	width: 310px;
 	padding: 10px 15px;
 	height: 20px;
-}
+} */
