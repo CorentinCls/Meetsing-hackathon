@@ -63,7 +63,7 @@ body {
   }
   
   .nav a {
-    color: white;
+    color: var(--font-color);
     text-decoration: none;
     display: block;
     text-align: center;
@@ -93,17 +93,23 @@ body {
 
 /* START Homepage */
 
-.loginEmail {
-    margin-right: 2.5rem;
-}
 
-.loginButton {
-    text-align: left;
+
+.formContainer {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    box-shadow: var(--font-color);
 }
 
 .buttonSubmit {
-   width: 76vw;
+   width: 38vw;
    height: 8vw;
+   background-color: var(--font-color);
+   color: white;
+   margin: auto;
+   margin-top: 1rem;
 }
 
 .HomepageTitle {
