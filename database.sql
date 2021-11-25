@@ -28,9 +28,13 @@ USE `meetsing`;
 CREATE TABLE `user` (
   `id` int(11) UNIQUE NOT NULL AUTO_INCREMENT PRIMARY KEY,
   `name` varchar(40) NOT NULL,
+  `email` varchar(100) NOT NULL, 
+  `password` varchar(50) NOT NULL,
   `address` varchar(100) NOT NULL,
   `prices` int(11) UNSIGNED NOT NULL,
-  `status` varchar(10) NOT NULL
+  `status` varchar(10) NOT NULL,
+  `photo` varchar(255) NOT NULL,
+  `phone_number` int(30) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 CREATE TABLE `instrument` (

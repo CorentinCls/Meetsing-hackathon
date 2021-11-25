@@ -9,4 +9,5 @@
 return [
     '' => ['HomeController', 'index',],
     'profile' => ['UserController', 'show',['id']],
+    'professors/search' => ['UserController', 'search'],
 ];
