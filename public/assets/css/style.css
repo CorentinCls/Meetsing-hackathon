@@ -1,3 +1,5 @@
+@import url(`https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap`);
+
 :root {
     background-image: linear-gradient(to bottom ,#b1bfd3,#a8655b);
     --color1 : #AF4596;
@@ -8,6 +10,7 @@
 
 body {
     height: 100vh;
+    font-family: 'Roboto', sans-serif;    
 }
 
 .glass {
@@ -22,9 +25,7 @@ body {
     box-shadow:  13px 13px 14px --color2,
     -13px -13px 14px #ff9acb;
 }
-body {
-    margin: 0;
-  }
+
   
   #wrap {
     font-family: sans-serif;
