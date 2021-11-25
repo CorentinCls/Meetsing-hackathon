@@ -17,7 +17,20 @@ body {
     background-position: center;
 }
 
-
+.all-card-container {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+p { color: #333333; font-family: "Helvetica Neue",Arial,sans-serif;
+     font-size: 26px; font-weight: 300; line-height: 1.5625; margin-bottom: 15px; }
+.card {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    
+}
 .glass {
     border: solid 0.2rem;
     background: rgba(255, 255, 255, 0.1);
@@ -206,5 +219,31 @@ body {
 .logo {
   z-index: 1;
   /* position: relative; */
+
+}
+#header-container {
+	display: block;
+	width: 320px;
+  height: 55px;
 }
 
+/* Select style here */
+option {
+    text-align: center;
+}
+select {
+	margin: 0 auto;
+	color: #131010;
+	width: 310px;
+	padding: 10px;
+	background: url(http://sharpik.com/wip/cuteselect/arrow.png) 295px 12px no-repeat white;
+    border-radius: 15px;
+}
+
+select option {
+	background-color: white;
+	color: black;
+	width: 310px;
+	padding: 10px 15px;
+	height: 20px;
+}

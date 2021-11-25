@@ -15,21 +15,28 @@
   <div class="inputs glass">
     <label>Instrument</label>
     <form method="post">
+    <section id="header-container">
     <select name="instrument" placeholder="example@test.com" />
-    {% for instrument in users %}
-        <option name={{instrument.instrument_name}} value={{instrument.instrument_name}}>{{instrument.instrument_name}}</option>
+    {% for user in users %}
+        <option name={{user.instrument}} value={{user.user}}>{{user.instrument}}</option>
     {% endfor %}
     </select>
     <br>
     <label></label>
       <select name="address" placeholder="example@test.com" />
+    </section>
+    </div>
+        <section id="header-container">
+    <select name="address" placeholder="6 rue de saint brice" />
     {% for user in users %}
-        <option name={{user.address}} value={{user.address}}>{{user.address}}</option>
+        <option name={{user.address}} value={{user.address}}>{{user.adress}}</option>
     {% endfor %}
     </select>
     <br>
+    </section>
     <button type="submit">Chercher</button>
   </div>
 </div>
+
 </form>
  {% endblock %}
