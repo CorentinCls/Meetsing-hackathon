@@ -26,7 +26,7 @@ DROP DATABASE IF EXISTS `meetsing`;
 CREATE DATABASE `meetsing`;
 USE `meetsing`;
 CREATE TABLE `user` (
-  `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  `id` int(11) UNIQUE NOT NULL AUTO_INCREMENT PRIMARY KEY,
   `name` varchar(40) NOT NULL,
   `address` varchar(100) NOT NULL,
   `prices` int(11) UNSIGNED NOT NULL,
@@ -34,7 +34,7 @@ CREATE TABLE `user` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 CREATE TABLE `instrument` (
-  `instrument_name` VARCHAR(40) NOT NULL PRIMARY KEY,
+  `instrument_name` VARCHAR(40) NOT NULL PRIMARY KEY
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 CREATE TABLE `user_instrument` (
@@ -42,3 +42,12 @@ CREATE TABLE `user_instrument` (
 `instrument_name` VARCHAR(20) NOT NULL,
 PRIMARY KEY(`user_id`, `instrument_name`)
 );
+
+
+CREATE TABLE `advice` (
+  `id` int UNIQUE NOT NULL AUTO_INCREMENT,
+  `user_id` int(11) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+ALTER TABLE advice ADD FOREIGN KEY (user_id) REFERENCES user(`id`);
