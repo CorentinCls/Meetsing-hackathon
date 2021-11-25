@@ -7,17 +7,20 @@
   <div class="brand-title">MeetSing</div>
   <div class="inputs">
     <label>Instrument</label>
+    <form method="post">
     <select name="instrument" placeholder="example@test.com" />
     {% for instrument in users %}
         <option name={{instrument.instrument_name}} value={{instrument.instrument_name}}>{{instrument.instrument_name}}</option>
     {% endfor %}
     </select>
     <label></label>
-      <select name="instrument" placeholder="example@test.com" />
+      <select name="address" placeholder="example@test.com" />
     {% for user in users %}
         <option name={{user.address}} value={{user.address}}>{{user.address}}</option>
     {% endfor %}
+    </select>
     <button type="submit">Chercher</button>
   </div>
 </div>
+</form>
  {% endblock %}

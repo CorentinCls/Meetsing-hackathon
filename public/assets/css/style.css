@@ -8,7 +8,9 @@
     --font-color : #392B57;
 }
 
-
+html {
+    height: 100%;
+}
 body {
     font-family: 'Roboto', sans-serif;    
 }
@@ -164,3 +166,4 @@ body {
     border-radius: 12px;
     border: 1px solid rgba(255, 255, 255, 0.125);
 }
+

@@ -2,9 +2,17 @@
 
 {% block content %}
 {% for user in users %}
-   <p> {{user.instrument_name}} </p>
+
+        <div class="glass">
+            <div class="border"></div>
+             <p> {{user.instrument_name}} </p>
    <p> {{user.name}} </p>
    <p> {{user.prices}} </p>
    <p> {{user.address}} </p>
+            <div class="border"></div>
+            <p class="price">{{ user.prices }}</p>
+        </div>
 {% endfor %}
+    
+  
  {% endblock %}
