@@ -1,0 +1,15 @@
+{% extends 'layout.html.twig' %}
+
+{% block content %}
+
+    <div class="profile">
+        <div class="glass">
+            <div class="border"></div>
+            {{ user.name }}
+            {{ user.address }}
+            <div class="border"></div>
+            <p class="price">{{ user.prices }}</p>
+        </div>
+    </div>
+    
+{% endblock %}
