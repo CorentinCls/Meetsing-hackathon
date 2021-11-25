@@ -17,7 +17,6 @@ class LoginController extends AbstractController
                 $_SESSION['email'] = $login['email'];
                 $_SESSION['password'] = $login['password'];
                 Header('Location: /');
-                var_dump($_SESSION);
             }
         }
         return $this->twig->render('Home/index.html.twig', ['login' =>  $_SESSION]);
