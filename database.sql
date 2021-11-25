@@ -21,43 +21,24 @@ SET time_zone = "+00:00";
 --
 
 -- --------------------------------------------------------
+DROP DATABASE IF EXISTS `meetsing`;
 
---
--- Structure de la table `item`
---
-
-CREATE TABLE `item` (
-  `id` int(11) UNSIGNED NOT NULL,
-  `title` varchar(255) NOT NULL
+CREATE DATABASE `meetsing`;
+USE `meetsing`;
+CREATE TABLE `user` (
+  `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  `name` varchar(40) NOT NULL,
+  `address` varchar(100) NOT NULL,
+  `prices` int(11) UNSIGNED NOT NULL,
+  `status` varchar(10) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
---
--- Contenu de la table `item`
---
+CREATE TABLE `instrument` (
+  `instrument_name` VARCHAR(40) NOT NULL PRIMARY KEY,
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
-INSERT INTO `item` (`id`, `title`) VALUES
-(1, 'Stuff'),
-(2, 'Doodads');
-
---
--- Index pour les tables exportées
---
-
---
--- Index pour la table `item`
---
-ALTER TABLE `item`
-  ADD PRIMARY KEY (`id`);
-
---
--- AUTO_INCREMENT pour les tables exportées
---
-
---
--- AUTO_INCREMENT pour la table `item`
---
-ALTER TABLE `item`
-  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+CREATE TABLE `user_instrument` (
+`user_id` INT NOT NULL,
+`instrument_name` VARCHAR(20) NOT NULL,
+PRIMARY KEY(`user_id`, `instrument_name`)
+);
