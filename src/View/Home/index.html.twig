@@ -1,9 +1,18 @@
 {% extends 'layout.html.twig' %}
 
 {% block content %}
+<div class="search-form">
     <form method="POST">
     <input type="text" placeholder="Instruments.." name="instrument">
     <input type="text" placeholder="Ville.." name="address">
     <button type="submit">Rechercher</button>
     </form>
+</div>
+<div class="login-form">
+    <form method="POST">
+    <input type="text" placeholder="Email" name="email">
+    <input type="text" placeholder="Mot de passe.." name="password">
+    <button type="submit">Se connecter</button>
+    </form>
+</div>
  {% endblock %}
