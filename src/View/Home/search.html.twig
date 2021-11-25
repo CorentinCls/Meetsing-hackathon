@@ -2,7 +2,9 @@
 
 {% block content %}
 {% for user in users %}
-{{dump(user)}}
    <p> {{user.instrument_name}} </p>
+   <p> {{user.name}} </p>
+   <p> {{user.prices}} </p>
+   <p> {{user.address}} </p>
 {% endfor %}
  {% endblock %}

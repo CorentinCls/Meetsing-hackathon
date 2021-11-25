@@ -1,12 +1,11 @@
 {% extends 'layout.html.twig' %}
 
 {% block content %}
-    <p class="HomepageTitle glass">MeetSing</p>
-    <form method="post" value="login">
-    <label for="email">Email</label>
-    <input type="email" id="email" name="email">
-    <label for="password">Mot de passe</label>
-    <input type="password" id="password" name="password">
-    <button type="submit">Se connecter</button>
+<div class="search-form">
+    <form method="POST">
+    <input type="text" placeholder="Instruments.." name="instrument">
+    <input type="text" placeholder="Ville.." name="address">
+    <button type="submit">Rechercher</button>
     </form>
+</div>
  {% endblock %}

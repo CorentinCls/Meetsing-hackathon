@@ -9,5 +9,10 @@
 return [
     '' => ['HomeController', 'index',],
     'profile' => ['UserController', 'show',['id']],
-    'professors/search' => ['UserController', 'search'],
+    '/professors/search' => ['HomeController', 'index'],
+    'items' => ['ItemController', 'index',],
+    'items/edit' => ['ItemController', 'edit', ['id']],
+    'items/show' => ['ItemController', 'show', ['id']],
+    'items/add' => ['ItemController', 'add',],
+    'items/delete' => ['ItemController', 'delete',],
 ];
