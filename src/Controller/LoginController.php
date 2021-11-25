@@ -19,6 +19,5 @@ class LoginController extends AbstractController
                 Header('Location: /');
             }
         }
-        return $this->twig->render('Home/index.html.twig', ['login' =>  $_SESSION]);
     }
 }
