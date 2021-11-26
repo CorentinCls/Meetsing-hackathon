@@ -229,7 +229,9 @@ label {
     text-shadow: 0.5px 0.5px #000000;
 
   }
-  
+.center-card {
+  margin-top: 50%;
+}
 .logo {
   z-index: 1;
 }
