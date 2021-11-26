@@ -1,15 +1,25 @@
 {% extends 'layout.html.twig' %}
 
 {% block content %}
-
-    <div class="profile">
-        <div class="glass">
-            <div class="border"></div>
-            {{ user.name }}
-            {{ user.address }}
-            <div class="border"></div>
-            <p class="price">{{ user.prices }}</p>
+   <div class="logo-container">
+            <img class="logo" style="width: 100px" src="assets/images/logo.png">
         </div>
+    <div class="profile">
+           <div class="card glass search-card">
+            <div class="brand-logo">
+            <img class="card-image" src="{{user.photo}}">
+            <div class="card-data card-data-left">
+            <p>{{user.name}}</p>
+            <p>{{user.instrument_name}}</p>
+            </div>
+            <div class="card-data card-data-right">
+            <p> Ville : </p>
+            <p>{{user.address}}</p>
+            <p>{{user.prices}}</p>
+            <p>{{user.advice}}</p>
+            </div>
+            <div>
+            </div>
     </div>
     
 {% endblock %}
