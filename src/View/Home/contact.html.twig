@@ -1,0 +1,30 @@
+{% extends 'layout.html.twig' %}
+
+{% block content %}
+
+<div class="logo-container" id="logo-contac">
+    <a href="/"><img class="logo" style="width: 100px" src="assets/images/logo.png"></a>
+</div>
+
+    <form class="formContainer card glass"
+        action="https://formspree.io/f/xyylvdrk"
+        method="POST">
+    <div>
+        <div class="glass-container">
+            
+              <h1>Contact</h1>
+              <label for="nom">Nom et prénom</label>
+              <input class="input-contact" type="text" name="nom" placeholder="Nom et prénom">
+
+              <label for="email">Email</label>
+              <input class="input-contact" type="email" name="email" placeholder="adresse mail">
+
+              <label for="message">Message</label>
+              <input class="input-contact" type="text" name="message" placeholder="Votre message">
+
+              <button class="submit-contact" type="submit">Envoyer</button>
+              
+          </div>
+    </form>
+
+{% endblock %}

@@ -22,6 +22,7 @@
     <br>
     <label for="address" >Ville</label>
     <select id="address" name="address" placeholder="6 rue de saint brice" />
+    
     {% for user in users %}
         <option name={{user.address}} value={{user.address}}>{{user.address|capitalize}}</option>
     {% endfor %}

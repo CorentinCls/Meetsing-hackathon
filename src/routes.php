@@ -10,6 +10,7 @@ return [
     '' => ['HomeController', 'index',],
     'profile' => ['HomeController', 'show', ['id']],
     '/professors/search' => ['HomeController', 'index'],
+    'contact' => ['ContactController', 'index'],
     'items' => ['ItemController', 'index',],
     'items/edit' => ['ItemController', 'edit', ['id']],
     'items/show' => ['ItemController', 'show', ['id']],
