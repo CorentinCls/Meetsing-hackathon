@@ -2,22 +2,19 @@
 
 {% block content %}
 
-	<div class="logo-container" id="logo-profile">
-		<a href="/"><img class="logo" style="width: 100px" src="assets/images/logo.png"></a>
-	</div>
-
 	<div class="section over-hide">
 		<div class="container">
 			<div class="row full-height justify-content-center">
 				<div class="col-12 text-center align-self-center py-5">
 					<div class="section text-center py-5 py-md-0">
 			          	<input class="pricing" type="checkbox" id="pricing" name="pricing"/>
-			          	<label for="pricing"><span class="block-diff">Détails<span class="float-right">camping</span></span></label>
+			          	<label for="pricing"><span class="block-diff">Détails<span class="float-left">Info</span></span></label>
 						<div class="card-3d-wrap mx-auto">
 							<div class="card-3d-wrapper">
 								<div class="card-front">
 									<div class="pricing-wrap">
-										<h4 class="">{{user.name}}</h4>
+										<h4 class="mb-5">
+											<a href="/"><img class="logo" style="width: 100px" src="assets/images/logo.png"></a>{{user.name}}</h4>
 										<h3 class="mb-4" style="text-align:center">Professeur de {{user.instrument_name}}</h3>
 										<h2 class="mb-2"><sup></sup>{{user.prices}}<sup>€</sup><sup>/hr</sup></h2>
 										<p class="mb-1"><i class="uil uil-location-pin-alt size-22"></i></p>
@@ -28,7 +25,8 @@
 			      				</div>
 								<div class="card-back">
 									<div class="pricing-wrap">
-										<h4 class="mb-5">{{user.name}}</h4>
+										<h4 class="mb-5">
+											<a href="/"><img class="logo" style="width: 100px" src="assets/images/logo.png"></a>{{user.name}}</h4>
 										<h2 class="mb-2" style="font-size: 1rem"><sup></sup>{{user.email}}</h2>
 										<p class="mb-2">{{user.description}}</p>
 										<p class="mb-1"><i class="uil uil-location-pin-alt size-22"></i></p>
