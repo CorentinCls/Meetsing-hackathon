@@ -2,38 +2,43 @@
 
 {% block content %}
 
-    {{ parent() }}
+	<div class="logo-container" id="logo-profile">
+		<a href="/"><img class="logo" style="width: 100px" src="assets/images/logo.png"></a>
+	</div>
+	<a href="/profile?id={{user.id}}">
+		<div class="wrapper card-z2" id="profile">
+			<div class="img-area">
+				<div class="inner-area">
+					<img src="{{user.photo}}" alt="">
+				</div>
+			</div>
+			<div class="icon arrow">
+				<i class="fas fa-arrow-left"></i>
+			</div>
+			<div class="icon dots">
+				<i class="fas fa-ellipsis-v"></i>
+			</div>
+			<div class="name">{{user.name}}</div>
+			<div class="about">Professeur de Musique</div>
+			<div class="social-icons"></div>
+			<div class="buttons">
+				<button>Contacter</button>
+			</div>
+			<div class="social-share">
+				<div class="row">
+					<span>⭐️ 5.0 (65)</span>
+				</div>
 
-       <a href="/profile?id={{user.id}}">
-        <div class="wrapper card-z2">
-    <div class="img-area">
-      <div class="inner-area">
-        <img src="{{user.photo}}" alt="">
-      </div>
-    </div>
-    <div class="icon arrow"><i class="fas fa-arrow-left"></i></div>
-    <div class="icon dots"><i class="fas fa-ellipsis-v"></i></div>
-    <div class="name">{{user.name}}</div>
-    <div class="about">Professeur de Musique</div>
-    <div class="social-icons">
-    </div>
-    <div class="buttons">
-      <button>Contacter</button>
-    </div>
-    <div class="social-share">
-      <div class="row">
-        <span>⭐️ 5.0 (65)</span>
-      </div>
-      
-      <div class="row">
-        <span>{{user.address}}</span>
-      </div>
+				<div class="row">
+					<span>{{user.address}}</span>
+				</div>
 
-      <div class="row">
-        <span>{{user.prices}} € / h</span>
-      </div>
-      
-    </div>
-  </div>
-    
-{% endblock %}
+				<div class="row">
+					<span>{{user.prices}}
+						€ / h</span>
+				</div>
+
+			</div>
+		</div>
+
+	{% endblock %}
