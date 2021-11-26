@@ -23,7 +23,17 @@ class UserManager extends AbstractManager
         return $statement->fetchAll();
     }
 
+    public function selectOneBySearch(
+        int $id
+    ): array {
+        $statement = $this->pdo->prepare("select * from user_instrument ui right join user on user.id = ui.user_id left join instrument on instrument.instrument_name = ui.instrument_name where id = :id");
+        $statement->bindValue('id', $id, \PDO::PARAM_STR);
+        $statement->execute();
 
+        return $statement->fetch();
+    }
+
+    
     public function selectAllSearchParameters(): array
     {
         $query = 'SELECT adress, instrument FROM populate' ;
