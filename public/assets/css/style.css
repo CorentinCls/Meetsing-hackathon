@@ -16,6 +16,7 @@ body {
     font-family: 'Roboto', sans-serif;
     background-image: url('');
     background-position: center;
+    text-decoration: none ;
 }
 
 p { color: #333333; font-family: "Helvetica Neue",Arial,sans-serif;
@@ -193,15 +194,15 @@ p { color: #333333; font-family: "Helvetica Neue",Arial,sans-serif;
     border-radius: 155px;
   }
 
-.home .inputs{
+.home .inputs,
+.card-z2{
     height: 60%;
     width: 90%;
     display: flex;
     flex-direction: column;
     background: linear-gradient(145deg, #fffffd, #d6d6d4);
     background: rgba(255, 255, 255, 0.418);
-
-  }
+    }
 
 
 
@@ -253,17 +254,6 @@ select:nth-child(2) {
     width: 260px;
     height: 400px;
 }
-/* option { 
-    text-align: center;
-}
-
-select option {
-	background-color: white;
-	color: black;
-	width: 310px;
-	padding: 10px 15px;
-	height: 20px;
-} */
 
 .wrapper:first-child {
   margin-top : 1.5rem;
@@ -307,13 +297,7 @@ body{
   align-items: center;
   justify-content: center;
 }
-.wrapper,
-.wrapper .img-area,
-.social-icons a,
-.buttons button{
-  box-shadow: -3px -3px 7px #ffffff,
-               3px 3px 5px #ceced1;
-}
+
 .wrapper{
   position: relative;
   width: 350px;
@@ -400,8 +384,7 @@ body{
   bottom: 0;
   right: 0;
   border-radius: 50%;
-  box-shadow: inset -3px -3px 7px #ffffff,
-              inset 3px 3px 5px #ceced1;
+ 
 }
 .buttons button:hover:before{
   z-index: -1;
