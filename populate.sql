@@ -13,6 +13,7 @@ INSERT INTO instrument VALUES ('piano');
 INSERT INTO instrument VALUES ('violon');
 INSERT INTO instrument VALUES ('basse');
 
+
 INSERT INTO user_instrument VALUES (1, 'guitar');
 INSERT INTO user_instrument VALUES (2, 'piano');
 INSERT INTO user_instrument VALUES (3, 'violon');
