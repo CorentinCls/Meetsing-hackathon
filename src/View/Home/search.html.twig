@@ -1,8 +1,9 @@
 {% extends 'layout.html.twig' %}
 
 {% block content %}
+
+   {{ parent() }}
     <div class="glass search all-card-container">
-    {{ parent() }}
         {% for user in users %}
         <div class="wrapper">
     <div class="img-area">
