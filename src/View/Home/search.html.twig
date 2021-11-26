@@ -1,9 +1,9 @@
 {% extends 'layout.html.twig' %}
 
 {% block content %}
-        <div class="logo-container">
-            <img class="logo" style="width: 100px" src="assets/images/logo.png">
-        </div>
+
+   {{ parent() }}
+        
     <div class="glass search all-card-container">
         {% for user in users %}
         <a href="/profile?id={{user.id}}">
