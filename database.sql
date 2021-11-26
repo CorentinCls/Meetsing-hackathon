@@ -41,12 +41,17 @@ CREATE TABLE `instrument` (
   `instrument_name` VARCHAR(40) NOT NULL PRIMARY KEY
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+
+CREATE TABLE `populate` (
+  `address` VARCHAR(100),
+  `instrument` VARCHAR(40)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
 CREATE TABLE `user_instrument` (
 `user_id` INT NOT NULL,
 `instrument_name` VARCHAR(20) NOT NULL,
 PRIMARY KEY(`user_id`, `instrument_name`)
 );
-
 
 CREATE TABLE `advice` (
   `id` int UNIQUE NOT NULL AUTO_INCREMENT,

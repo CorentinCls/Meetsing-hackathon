@@ -36,7 +36,7 @@ class UserManager extends AbstractManager
     
     public function selectAllSearchParameters(): array
     {
-        $query = 'SELECT adress, instrument FROM populate' ;
+        $query = 'SELECT address, instrument FROM populate' ;
 
 
         return $this->pdo->query($query)->fetchAll();

@@ -4,21 +4,36 @@
 
     {{ parent() }}
 
-    <div class="profile">
-           <div class="card glass search-card">
-            <div class="brand-logo">
-            <img class="card-image" src="{{user.photo}}">
-            <div class="card-data card-data-left">
-            <p>{{user.name}}</p>
-            <p>{{user.instrument_name}}</p>
-            </div>
-            <div class="card-data card-data-right">
-            <p>{{user.address}}</p>
-            <p>{{user.prices}}</p>
-            <p>{{user.advice}}</p>
-            </div>
-            <div>
-            </div>
+       <a href="/profile?id={{user.id}}">
+        <div class="wrapper">
+    <div class="img-area">
+      <div class="inner-area">
+        <img src="{{user.photo}}" alt="">
+      </div>
     </div>
+    <div class="icon arrow"><i class="fas fa-arrow-left"></i></div>
+    <div class="icon dots"><i class="fas fa-ellipsis-v"></i></div>
+    <div class="name">{{user.name}}</div>
+    <div class="about">Professeur de Musique</div>
+    <div class="social-icons">
+    </div>
+    <div class="buttons">
+      <button>Contacter</button>
+    </div>
+    <div class="social-share">
+      <div class="row">
+        <span>⭐️ 5.0 (65)</span>
+      </div>
+      
+      <div class="row">
+        <span>{{user.address}}</span>
+      </div>
+
+      <div class="row">
+        <span>{{user.prices}} € / h</span>
+      </div>
+      
+    </div>
+  </div>
     
 {% endblock %}
