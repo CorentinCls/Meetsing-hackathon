@@ -555,3 +555,8 @@ input::placeholder {
 #logo-contac {
   transform: translateX(0rem, 1800px);
 }
+.left {
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+}
+
