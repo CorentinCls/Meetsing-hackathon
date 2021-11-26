@@ -1,0 +1,38 @@
+{% extends 'layout.html.twig' %}
+
+{% block content %}
+
+	<div class="logo-container" id="logo-profile">
+		<a href="/"><img class="logo" style="width: 100px" src="assets/images/logo.png"></a>
+	</div>
+	<a href="/profile?id={{user.id}}">
+		<div class="wrapper card-z2" id="profile">
+					<img class="card-image" src="{{user.photo}}" alt="">
+			<div class="icon arrow">
+			</div>
+			<div class="icon dots">
+			</div>
+			<div class="name">{{user.name}}</div>
+			<div class="about">Professeur de Musique</div>
+			<div class="social-icons"></div>
+			<div class="buttons">
+				<button> <a href="/contact">Contacter</a> </button>
+			</div>
+			<div class="social-share">
+				<div class="row">
+        <span style="color: white" class="advice"><i style="color: orange" class="fa fa-star" aria-hidden="true"></i> <i style="color: orange" class="fa fa-star" aria-hidden="true"></i><i style="color: orange" class="fa fa-star" aria-hidden="true"></i><i style="color: orange" class="fa fa-star" aria-hidden="true"><i style="color: orange" class="fas fa-star" aria-hidden="true"></i></i>  (65)</span>
+				</div>
+
+				<div class="row">
+                <div class="address">
+					<span class="glass"><i style="color:#8B0000" class="fas fa-map-marker-alt"></i> {{user.address}}</span>
+					<span class="glass">{{user.prices}}€ / h</span>
+            </div>
+        <div class="row">
+          <span>{{user.description}}</span>
+        </div
+
+			</div>
+		</div>
+
+	{% endblock %}
