@@ -28,7 +28,7 @@ class HomeController extends AbstractController
             $address = $_POST['address'];
             $userManager = new UserManager();
             $users = $userManager->selectAllBySearch($instrument, $address);
-            return $this->twig->render('Home/profile.html.twig', ['users' =>  $users]);
+            return $this->twig->render('Home/search.html.twig', ['users' =>  $users]);
         }
     }
 
@@ -45,7 +45,7 @@ class HomeController extends AbstractController
             $address = $_POST['address'];
             $userManager = new UserManager();
             $users = $userManager->selectAllBySearch($instrument, $address);
-            return $this->twig->render('Home/profile.html.twig', ['users' =>  $users]);
+            return $this->twig->render('Home/search.html.twig', ['users' =>  $users]);
         }
         else {
             $userManager = new UserManager();

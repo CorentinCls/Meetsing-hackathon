@@ -22,7 +22,6 @@ class UserManager extends AbstractManager
 
         return $statement->fetchAll();
     }
-
     public function selectOneBySearch(
         int $id
     ): array {
