@@ -19,6 +19,17 @@ body {
 
 p { color: #333333; font-family: "Helvetica Neue",Arial,sans-serif;
      font-size: 26px; font-weight: 300; line-height: 1.5625; margin-bottom: 15px; }
+     
+.textProfil {
+    font-family: "Helvetica Neue",Arial,sans-serif;
+    max-width: 590px;
+    color:whitesmoke;
+    text-shadow: 1px 1px 2px #DC592A, 0 0 1em #1188AD, 0 0 0.2em #DC592A;
+    font-weight: bolder;
+    margin: 0;
+    padding-top: 3rem;
+}   
+
 .card {
     text-align: center;
     justify-content: center;
@@ -192,6 +203,7 @@ p { color: #333333; font-family: "Helvetica Neue",Arial,sans-serif;
 .profile p {
     text-align: right;
     padding-right: 1rem;
+    
 }
 
 /* END Profile */
