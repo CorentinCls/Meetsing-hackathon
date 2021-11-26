@@ -212,7 +212,7 @@ p { color: #333333; font-family: "Helvetica Neue",Arial,sans-serif;
 
 .logo-container {
   margin-top: 2rem;
-  transform: translate( 9rem ,-4.75rem);
+  transform: translate( 0rem ,-20rem);
   z-index: 1;
   position: absolute;
 }
