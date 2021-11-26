@@ -230,10 +230,11 @@ label:first-child {
 }
 label {
     padding: 1.5rem;
+    text-shadow: 0.5px 0.5px #000000;
+
   }
-  
-select:nth-child(2) {
-    padding-bottom: 1rem;
+.center-card {
+  margin-top: 50%;
 }
 .logo {
   z-index: 1;
@@ -348,6 +349,15 @@ body{
   height: calc(100% - 25px);
   width: calc(100% - 25px);
   border-radius: 50%;
+}
+a {
+  text-decoration: none;
+}
+
+label {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: italic;
 }
 .inner-area img{
   height: 100%;
