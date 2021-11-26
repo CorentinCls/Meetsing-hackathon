@@ -151,7 +151,7 @@ p { color: #333333; font-family: "Helvetica Neue",Arial,sans-serif;
 }
 
 #logo-profile {
-  transform: translate(0px ,-160px);
+  transform: translate(0px ,-180px);
 }
 
 .border {
@@ -207,7 +207,7 @@ p { color: #333333; font-family: "Helvetica Neue",Arial,sans-serif;
     }
 
 #profile{
-  margin-top: 10vh;
+  margin-top: 7vh;
 }
 
 .brand-title {
@@ -500,10 +500,11 @@ label {
      display: flex;
      justify-content: center;
      flex-direction: column;
-     width: 70%;
+     width: 90%;
      min-width: 200px;
      margin: auto;
      margin-bottom: 3rem;
+     margin-top: 7vh;
  }
  
  form div{
@@ -511,7 +512,6 @@ label {
  }
  
  .h2Contact{
-     color: #ED6C6D;
      text-align: center;
      margin: auto;
      margin-top: 2rem;
@@ -539,16 +539,10 @@ label {
      margin: auto;
      align-items: center;
      padding: 0.5rem;
-     background-color: #ED6C6D;
      color: white;
      font-weight: bold;
      border-radius: 10%;
      transition: background-color .4s;
- }
- 
- #submitz:hover{
-     background-color: white;
-     color: #ED6C6D;
  }
  
  .labelForm{
@@ -557,4 +551,8 @@ label {
      justify-content: center;
      padding: 0.3rem;
  }
+
+#logo-contact {
+    transform: translate(0px ,-290px);
+}
  

@@ -1,10 +1,18 @@
 {% extends 'layout.html.twig' %}
 
 {% block content %}
-    <form class="formContainer"
+
+<div class="logo-container" id="logo-contact">
+    <a href="/"><img class="logo" style="width: 100px" src="assets/images/logo.png"></a>
+</div>
+
+    <form class="formContainer card glass"
         action="https://formspree.io/f/xyylvdrk"
         method="POST">
     <div>
+
+        
+
         <label class="labelForm" for="formName">Nom complet</label>
         <input class="inputForm" id="formName" type="text" name="name" placeholder="Dupont Michel">
     </div>
