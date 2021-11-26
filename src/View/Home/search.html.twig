@@ -2,21 +2,35 @@
 
 {% block content %}
     <div class="glass search all-card-container">
-        <div class="logo-container">
-            <img class="logo" style="width: 100px" src="assets/images/logo.png">
-        </div>
+    {{ parent() }}
         {% for user in users %}
-        <a href="/profile?id={{user.id}}">
-        <div class="card glass search-card">
-            <div class="brand-logo">
-            </div>
-            <img class="card-image" src="{{user.photo}}">
-            <div class="card-content">
-            <p>{{ user.name }}</p>
-            <p>{{user.prices }}</p>
-            </div>
-        </div>
-        </a>
+        <div class="wrapper">
+    <div class="img-area">
+      <div class="inner-area">
+        <img src="{{user.photo}}" alt="">
+      </div>
+    </div>
+    <div class="icon arrow"><i class="fas fa-arrow-left"></i></div>
+    <div class="icon dots"><i class="fas fa-ellipsis-v"></i></div>
+    <div class="name">{{user.name}}</div>
+    <div class="about">Professeur de {{user.instrument_name}}</div>
+    <div class="social-icons">
+    </div>
+    <div class="buttons">
+      <button>Contacter</button>
+      <button>Voir le profil</button>
+    </div>
+    <div class="social-share">
+      <div class="row">
+        <span>⭐️ 5.0 (65)</span>
+      </div>
+
+      <div class="row">
+        <i class="fas fa-share"></i>
+        <span>{{user.prices}} € / h</span>
+      </div>
+    </div>
+  </div>
         {% endfor %}
     </div>
     

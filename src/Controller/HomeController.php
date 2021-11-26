@@ -45,7 +45,6 @@ class HomeController extends AbstractController
             $address = $_POST['address'];
             $userManager = new UserManager();
             $users = $userManager->selectAllBySearch($instrument, $address);
-            var_dump($users);
             return $this->twig->render('Home/search.html.twig', ['users' =>  $users]);
         }
         else {
