@@ -211,11 +211,15 @@ p { color: #333333; font-family: "Helvetica Neue",Arial,sans-serif;
 } 
 
 .logo-container {
-  margin-top: 2rem;
-  transform: translate( 0rem ,-20rem);
+  transform: translate( 0rem ,-20.75rem);
   z-index: 1;
   position: absolute;
 }
+
+.search-logo {
+  margin-top: 2.8rem;
+}
+
 label:first-child {
   padding: 2.5rem;
 }
