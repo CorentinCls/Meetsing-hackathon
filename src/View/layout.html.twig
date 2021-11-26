@@ -13,7 +13,11 @@
 </head>
 
 <body >
-    {% block content %}{% endblock %}
+    {% block content %}
+        <div class="logo-container">
+           <a href="/"><img class="logo" style="width: 100px" src="assets/images/logo.png"></a>
+        </div>
+      {% endblock %}
     {% block javascript %}{% endblock %}
 </body>
 </html>
