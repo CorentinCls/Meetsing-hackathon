@@ -34,7 +34,7 @@ CREATE TABLE `user` (
   `prices` int(11) UNSIGNED NOT NULL,
   `status` varchar(10) NOT NULL,
   `photo` varchar(255) NOT NULL,
-  `phone_number` int(30) NOT NULL
+  `description` int(30) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 CREATE TABLE `instrument` (
