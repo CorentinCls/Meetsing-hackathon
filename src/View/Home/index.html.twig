@@ -12,17 +12,17 @@
         <p> Les meilleurs professeurs sont ceux que vous choisissez ! </p>
   <div class="inputs glass">
     <section id="header-container">
-    <label for="instrument">Instrument</label>
+    <label for="instrument" class="instrument">Instrument</label>
     <select id="instrument" name="instrument" placeholder="example@test.com" />
     {% for user in users %}
-        <option name={{user.instrument}} value={{user.instrument}}>{{user.instrument}}</option>
+        <option name={{user.instrument}} value={{user.instrument}}>{{user.instrument|capitalize}}</option>
     {% endfor %}
     </select>
     <br>
-    <label for="address" >Address</label>
+    <label for="address" >Ville</label>
     <select id="address" name="address" placeholder="6 rue de saint brice" />
     {% for user in users %}
-        <option name={{user.address}} value={{user.address}}>{{user.address}}</option>
+        <option name={{user.address}} value={{user.address}}>{{user.address|capitalize}}</option>
     {% endfor %}
     </select>
     <br>
