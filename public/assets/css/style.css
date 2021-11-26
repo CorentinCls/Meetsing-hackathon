@@ -9,6 +9,7 @@
 
 html {
     height: 100%;
+    font-family: "Helvetica Neue",Arial,sans-serif !important;
     overflow-y : none;
 }
 body {
@@ -27,7 +28,9 @@ p { color: #333333; font-family: "Helvetica Neue",Arial,sans-serif;
     text-shadow: 1px 1px 2px #DC592A, 0 0 1em #1188AD, 0 0 0.2em #DC592A;
     font-weight: bolder;
     margin: 0;
-    padding-top: 3rem;
+    padding: 0 20px;
+    margin-top: 1rem;
+    text-align: center;
 }   
 
 .card {
@@ -192,7 +195,7 @@ p { color: #333333; font-family: "Helvetica Neue",Arial,sans-serif;
     
 }
 
-#logo-profile {
+.logo-profile {
   transform: translate(0px ,-180px);
 }
 
@@ -579,6 +582,7 @@ input::placeholder {
 
 .input-contact {
   border-radius: 15px;
+  width: 250px;
   height: 35px;
 }
 
@@ -963,8 +967,6 @@ a:hover {
   transition: transform 400ms 1300ms ease, opacity 300ms 1300ms ease;
 }
 
-
-
 .logo {
 	position: fixed;
 	top: 30px;
@@ -977,4 +979,11 @@ a:hover {
 	height: 26px;
 	width: auto;
 	display: block;
+}
+
+.home-logo {
+z-index: 1;
+position: relative;
+transform: translate(-10px, 82px);
+
 }
