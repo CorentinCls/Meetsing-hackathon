@@ -1,6 +1,7 @@
 {% extends 'layout.html.twig' %}
 
 {% block content %}
+<form method="post">
 <div class="logo-container">
   <img class="logo" style="width: 100px" src="assets/images/logo.png">
 </div>
@@ -9,12 +10,11 @@
   </div>
         <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
   <div class="inputs glass">
-    <form method="post">
     <section id="header-container">
     <label for="instrument">Instrument</label>
-    <select id="instrument"="instrument" placeholder="example@test.com" />
+    <select id="instrument" name="instrument" placeholder="example@test.com" />
     {% for user in users %}
-        <option name={{user.instrument}} value={{user.user}}>{{user.instrument}}</option>
+        <option name={{user.instrument}} value={{user.instrument}}>{{user.instrument}}</option>
     {% endfor %}
     </select>
     <br>
@@ -27,9 +27,8 @@
     <br>
     <div class="element"></div>
     <button id="search" type="submit">Chercher</button>
+</form>
     </section>
   </div>
 </div>
-
-</form>
  {% endblock %}
