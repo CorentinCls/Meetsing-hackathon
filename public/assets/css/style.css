@@ -10,6 +10,7 @@
 
 html {
     height: 100%;
+    overflow-y : none;
 }
 body {
     font-family: 'Roboto', sans-serif;
@@ -17,11 +18,6 @@ body {
     background-position: center;
 }
 
-.all-card-container {
-    display:flex;
-    justify-content: center;
-    align-items: center;
-}
 p { color: #333333; font-family: "Helvetica Neue",Arial,sans-serif;
      font-size: 26px; font-weight: 300; line-height: 1.5625; margin-bottom: 15px; }
 .card {
@@ -29,7 +25,6 @@ p { color: #333333; font-family: "Helvetica Neue",Arial,sans-serif;
     justify-content: center;
     align-items: center;
     width: 300px;
-    
 }
 .glass {
     border: solid 0.2rem;
@@ -171,7 +166,7 @@ p { color: #333333; font-family: "Helvetica Neue",Arial,sans-serif;
 
 /* START Home */
 
-.home {
+.home , .search {
     height: 86vh;
     width: 90vw;
     margin: auto;
@@ -183,9 +178,10 @@ p { color: #333333; font-family: "Helvetica Neue",Arial,sans-serif;
     align-items: center;
     z-index: 0;
     position: relative;
+    overflow-y: scroll;
+    
     
   }
-  
   .home select {
     width: 80%;
     text-align: center;
@@ -221,8 +217,14 @@ p { color: #333333; font-family: "Helvetica Neue",Arial,sans-serif;
   z-index: 1;
   position: absolute;
 }
-#header-container select {
-  
+label:first-child {
+  padding: 2.5rem;
+}
+label {
+    padding: 1.5rem;
+  }
+select:nth-child(2) {
+    padding-bottom: 1rem;
 }
 .logo {
   z-index: 1;
@@ -230,11 +232,25 @@ p { color: #333333; font-family: "Helvetica Neue",Arial,sans-serif;
 
 }
 #header-container {
-	display: block;
+	display: flex;
+    flex-direction: column;
+
 	width: 320px;
   height: 55px;
 }
 
+#search {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top : 2rem;
+    border-radius: 15px;
+    padding: 0.6rem;
+}
+.search-card {
+    width: 260px;
+    height: 400px;
+}
 /* option { 
     text-align: center;
 }
@@ -246,3 +262,11 @@ select option {
 	padding: 10px 15px;
 	height: 20px;
 } */
+
+.all-card-container {
+    display:grid;
+    grid-auto-flow: row;
+    height: 80vh;
+    overflow-y: scroll;
+    gap: 1rem;
+}
