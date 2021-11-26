@@ -32,6 +32,12 @@ class HomeController extends AbstractController
         }
     }
 
+    public function show($id) {
+        $userManager = new UserManager();
+        $user = $userManager->selectOneBySearch($id);
+        return $this->twig->render('Home/profile.html.twig', ['user' =>  $user]);
+    }
+
     public function index()
     {
         if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['instrument'])) {
@@ -39,6 +45,7 @@ class HomeController extends AbstractController
             $address = $_POST['address'];
             $userManager = new UserManager();
             $users = $userManager->selectAllBySearch($instrument, $address);
+            var_dump($users);
             return $this->twig->render('Home/search.html.twig', ['users' =>  $users]);
         }
         else {
