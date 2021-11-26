@@ -555,4 +555,9 @@ label {
 #logo-contact {
     transform: translate(0px ,-290px);
 }
- 
+
+.left {
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+}
+
