@@ -1,11 +1,10 @@
 @import url(`https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap`);
 
 :root {
-    background-image: linear-gradient(to bottom ,#b1bfd3,#a8655b);
-    --color1 : #AF4596;
-    --color2 : #F0AEC0;
-    --color3 : #EEBCCC;
-    --font-color : #392B57;
+  --color1 : #AF4596;
+  --color2 : #F0AEC0;
+  --color3 : #EEBCCC;
+  --font-color : #392B57;
   }
 
 html {
@@ -13,7 +12,7 @@ html {
     overflow-y : none;
 }
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: Roboto;
     background-image: url('');
     background-position: center;
     text-decoration: none ;
@@ -106,9 +105,32 @@ p { color: #333333; font-family: "Helvetica Neue",Arial,sans-serif;
     color:#306;
   }
 
-/* START Homepage */
+  /* BACKGROUND Animation */
 
+  body {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 5s ease infinite;
+    height: 100vh;
+  }
+  
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
 
+  /* BACKGROUND Animation */
+
+  /* START Homepage */
+  
+  
 
 .formContainer {
     text-align: center;
@@ -230,7 +252,7 @@ label:first-child {
 }
 label {
     padding: 1.5rem;
-    text-shadow: 0.5px 0.5px #000000;
+    text-shadow: 1px 1px 2px black, 0 0 1em #F0AEC0, 0 0 0.2em #EEBCCC;
 
   }
 .center-card {
@@ -294,7 +316,6 @@ label {
 *{
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
 body{
@@ -486,3 +507,5 @@ label {
   opacity: 1;
   pointer-events: auto;
 }
+
+
