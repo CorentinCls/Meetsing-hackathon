@@ -134,14 +134,11 @@ p { color: #333333; font-family: "Helvetica Neue",Arial,sans-serif;
     color: var(--font-color);
 }
 
-
-
 /* END Homepage */
 
 /* START Profile */
 
 .profile {
-    margin-top: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -151,6 +148,10 @@ p { color: #333333; font-family: "Helvetica Neue",Arial,sans-serif;
     height: 80vh;
     width: 80vw;
     
+}
+
+#logo-profile {
+  transform: translate(0px ,-160px);
 }
 
 .border {
@@ -202,9 +203,12 @@ p { color: #333333; font-family: "Helvetica Neue",Arial,sans-serif;
     flex-direction: column;
     background: linear-gradient(145deg, #fffffd, #d6d6d4);
     background: rgba(255, 255, 255, 0.418);
+    margin-top: 5vh;
     }
 
-
+#profile{
+  margin-top: 10vh;
+}
 
 .brand-title {
   text-align: center;
