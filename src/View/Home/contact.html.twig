@@ -1,0 +1,22 @@
+{% extends 'layout.html.twig' %}
+
+{% block content %}
+    <form class="formContainer"
+        action="https://formspree.io/f/xyylvdrk"
+        method="POST">
+    <div>
+        <label class="labelForm" for="formName">Nom complet</label>
+        <input class="inputForm" id="formName" type="text" name="name" placeholder="Dupont Michel">
+    </div>
+    <div>
+        <label for="formMail" class="labelForm">Email:</label>
+        <input class="inputForm" type="email" id="formMail" name="_replyto" placeholder="MonEmail@wild.com">
+    </div>
+    <div>
+        <label for="formTextarea" class="labelForm"> Votre Message:</label>
+        <textarea name="message" id="formTextarea" rows="4" cols="21" placeholder="Bonjour, je vous contacte pour..."></textarea>
+    </div>
+        <button class="formContainer" id="submitz" type="submit">Envoyer</button>
+    </form>
+
+{% endblock %}
